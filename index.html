@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>&#x1F410; GOAT22 CASSINO</title>
+  <meta name="description" content="CASSINO DO YURI22 O PARAGUAI É LONGE LULA" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <div id="disclaimer">⚠️ CASSINO DO YURI22 PEGA LA LULA EU TO NO PARAGUAI</div>
+  <div id="confetti-container"></div>
+
+  <!-- CAMADA 1: Moedas caindo no fundo -->
+  <div id="coins-bg" class="coins-bg"></div>
+
+  <div class="banca-bar">
+    <div class="banca-label">💰 BANCA</div>
+    <div class="banca-valor" id="banca-valor">300</div>
+    <div class="banca-aposta">APOSTA: <strong>50 pts</strong> por rodada</div>
+  </div>
+
+  <main class="casino-wrapper">
+
+    <header class="casino-header">
+      <div class="logo-area">
+        <img src="22736478-c43c-456a-8fe3-5ba91a2a01f8.webp" alt="Goat22" class="mascot-logo" id="mascot-logo" />
+        <div class="logo-text">
+          <h1>GOAT22</h1>
+          <span class="logo-sub">CASINO</span>
+        </div>
+      </div>
+      <p class="subtitle">TROPA DO 22 AQUI O CASSINO NÃO PARA</p>
+    </header>
+
+    <section class="scoreboard">
+      <div class="score-item">
+        <span class="score-label">Rodadas</span>
+        <span class="score-value" id="rounds">0</span>
+      </div>
+      <div class="score-item">
+        <span class="score-label">Maior Prêmio</span>
+        <span class="score-value" id="best">0</span>
+      </div>
+    </section>
+
+    <section class="slot-machine">
+      <div class="slot-frame">
+        <div class="machine-top">
+          <img src="22736478-c43c-456a-8fe3-5ba91a2a01f8.webp" alt="Goat22" class="machine-mascot" />
+          <span class="machine-label">GOAT22 SLOTS</span>
+          <img src="22736478-c43c-456a-8fe3-5ba91a2a01f8.webp" alt="Goat22" class="machine-mascot flip" />
+        </div>
+        <div class="reels-container">
+          <div class="reel" id="reel-0">&#x1F410;</div>
+          <div class="reel" id="reel-1">&#x1F410;</div>
+          <div class="reel" id="reel-2">&#x1F410;</div>
+        </div>
+      </div>
+      <div id="result-message" class="result-message hidden"></div>
+    </section>
+
+    <section class="controls">
+      <button id="spin-btn" class="spin-button">
+        <span id="btn-text">&#x1F3B0; GIRAR! (-50 pts)</span>
+      </button>
+    </section>
+
+    <section class="history-box">
+      <h2>&#x1F4DC; Histórico de Catástrofes</h2>
+      <ul id="history-list">
+        <li class="history-empty">Nenhuma rodada ainda... Aperta o botão, covarde!</li>
+      </ul>
+    </section>
+  </main>
+
+  <!-- CAMADA 4: TU É GOAATTT — prêmio máximo (auto-dismiss) -->
+  <div id="goat-overlay" class="goat-overlay hidden">
+    <div class="goat-content">
+      <div class="goat-main-text">TU É<br>GOAATTT</div>
+      <img src="22736478-c43c-456a-8fe3-5ba91a2a01f8.webp" alt="Goat22" class="goat-mascot-big" />
+      <div class="goat-prize" id="goat-prize"></div>
+      <img src="6e3811d3288de17d42a50bbe6bf119509295371e6d1a98ee733b6ff5ad584ccd.webp" alt="Prêmio Máximo"
+        class="goat-blue-img" />
+    </div>
+  </div>
+
+  <div id="loss-overlay" class="loss-overlay hidden">
+    <div class="loss-content">
+      <img src="772fae22-0dda-46ca-a066-e4f6fd6f9acd-profile_image-300x300.webp" alt="Não ganhou nada!" id="img-loss"
+        class="result-img img-loss" />
+      <div class="loss-message" id="loss-message"></div>
+      <button id="loss-close" class="loss-close-btn">Ok, vou tentar de novo &#x1F62D;</button>
+    </div>
+  </div>
+
+  <div id="broke-overlay" class="broke-overlay hidden">
+    <div class="broke-content">
+      <img src="22736478-c43c-456a-8fe3-5ba91a2a01f8.webp" alt="Goat22" class="broke-mascot" />
+      <div class="broke-title">&#x1F480; O GOAT22 QUEBROU SUA BANCA</div>
+      <div class="broke-sub">O PT E O GOAT LEVOU TODO SEU DINHEIRO</div>
+      <div class="broke-timer-label">Nova banca disponível em:</div>
+      <div class="broke-timer" id="broke-timer">05:00:00</div>
+      <div class="broke-note">*(cassino do goat quero ver pegar)*</div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
